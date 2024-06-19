@@ -9,7 +9,7 @@ export default function DefaultWrapper({
 }>) {
 	return (
 		<div className='flex flex-col overflow-x-hidden'>
-			<div className='flex gap-24 pt-16 ml-20'>
+			<div className='flex flex-col lg:flex-row xl:gap-24 pt-3 ml-5 xl:pt-16 xl:ml-20'>
 				<Sidebar/>
 				{children}
 			</div>

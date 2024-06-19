@@ -20,10 +20,10 @@ export default function Sidebar() {
 	return (
 		<NavigationMenu className="items-start">
 			<NavigationMenuList className="sidebar rounded-full scale-0 p-1">
-				<NavigationMenuItem className="sidebar-wrapper flex flex-col items-center gap-1 h-14 overflow-hidden">
+				<NavigationMenuItem className="sidebar-wrapper flex lg:flex-col items-center gap-1 w-14 lg:h-14 overflow-hidden">
 					<Link href="/" legacyBehavior passHref>
 						<NavigationMenuLink
-							className={`flex flex-col items-center justify-center rounded-full [&>svg]:hover:size-10 hover:bg-secondary min-h-14 size-14 transition ${
+							className={`flex flex-col items-center justify-center rounded-full [&>svg]:hover:size-10 hover:bg-secondary min-h-14 min-w-14 size-14 transition ${
 								pathName === "" &&
 								"size-14 bg-secondary [&>svg]:fill-svg-secondary [&>svg]:size-10"
 							}`}
@@ -44,7 +44,7 @@ export default function Sidebar() {
 
 					<Link href="/frontend-projects" legacyBehavior passHref>
 						<NavigationMenuLink
-							className={`flex flex-col items-center justify-center rounded-full min-h-14 [&>svg]:hover:size-10 hover:bg-secondary size-14 transition ${
+							className={`flex flex-col items-center justify-center rounded-full min-h-14 min-w-14 [&>svg]:hover:size-10 hover:bg-secondary size-14 transition ${
 								pathName === "frontend-projects" &&
 								"size-14 bg-secondary [&>svg]:fill-svg-secondary [&>svg]:size-10"
 							}`}
@@ -67,7 +67,7 @@ export default function Sidebar() {
 					</Link>
 					<Link href="/backend-projects" legacyBehavior passHref>
 						<NavigationMenuLink
-							className={`flex flex-col items-center justify-center rounded-full min-h-14 [&>svg]:hover:size-10 hover:bg-secondary size-14 transition ${
+							className={`flex flex-col items-center justify-center rounded-full min-h-14 min-w-14 [&>svg]:hover:size-10 hover:bg-secondary size-14 transition ${
 								pathName === "backend-projects" &&
 								"size-14 bg-secondary [&>svg]:fill-svg-secondary [&>svg]:size-10"
 							}`}
@@ -101,11 +101,11 @@ export default function Sidebar() {
 							)}
 						</NavigationMenuLink>
 					</Link>
-					<div className="w-full px-3">
-						<Separator />
+					<div className="w-full min-w-1 h-8 lg:h-0 lg:px-3">
+						<Separator className="lg:h-[1px] lg:w-full h-full w-[1px]"/>
 					</div>
 					<Link href="https://t.me/damirsch" legacyBehavior passHref>
-						<NavigationMenuLink className="flex flex-col items-center justify-center rounded-full min-h-14 [&>svg]:hover:size-10 hover:bg-secondary size-14 transition">
+						<NavigationMenuLink className="flex flex-col items-center justify-center rounded-full min-h-14 min-w-14 [&>svg]:hover:size-10 hover:bg-secondary size-14 transition">
 							<svg
 								viewBox="-3 -3 38 38"
 								version="1.1"

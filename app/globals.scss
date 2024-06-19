@@ -44,6 +44,8 @@
 
 		--card: 222.2 84% 4.9%;
 		--card-foreground: 210 40% 98%;
+		--card-primary: #3b3b3f;
+		--card-secondary: #1a1b1e;
 
 		--popover: 222.2 84% 4.9%;
 		--popover-foreground: 210 40% 98%;
@@ -54,7 +56,7 @@
 		--secondary: 0, 0%, 100%, 0.1;
 		--secondary-foreground: 0, 0%, 100%, 0.6;
 
-		--muted: 217.2 32.6% 17.5%;
+		--muted: #494949;
 		--muted-foreground: 215 20.2% 65.1%;
 
 		--accent: 217.2 32.6% 17.5%;
@@ -88,10 +90,10 @@
 
 .slider-card{
 	box-shadow: 0px 8px 9px 0px #00000099;
-	background: linear-gradient(180deg, #3b3b3f 0%, #1a1b1e 100%) padding-box,
+	background: linear-gradient(180deg, var(--card-primary) 0%, var(--card-secondary) 100%) padding-box,
 		linear-gradient(180deg, #595a5c 0%, #1a1b1e 100%) border-box;
 	border: 2px solid transparent;
-	user-select: none
+	user-select: none;
 }
 
 img{

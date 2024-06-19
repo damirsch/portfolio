@@ -30,6 +30,8 @@ const config = {
         },
         'svg-primary': 'var(--svg-primary)',
         'svg-secondary': 'var(--svg-secondary)',
+        'card-primary': 'var(--card-primary)',
+        'card-secondary': 'var(--card-prisecondarymary)',
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
@@ -39,7 +41,7 @@ const config = {
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
+          DEFAULT: "var(--muted)",
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
