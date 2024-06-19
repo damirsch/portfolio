@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils"
 import "./globals.scss";
 import { ThemeProvider } from "@/components/theme-provider";
 import DefaultWrapper from "@/components/default-wrapper";
+import { StartAnimation } from "@/components/animations/animation-on-start";
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -38,6 +39,8 @@ export default function RootLayout({
 						{children}
 					</DefaultWrapper>
 				</ThemeProvider>
+				{/* ANIMATIONS */}
+				<StartAnimation/>
 			</body>
 		</html>
 	);
