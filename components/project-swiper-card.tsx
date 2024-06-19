@@ -19,7 +19,7 @@ export default function ProjectSwiperCard({
 }: IProjectSwiperCard) {
   return (
     <div className="slider-card cursor-pointer relative max-w-full mx-4 lg:max-w-[760px] p-2 rounded-[40px] overflow-hidden">
-      <div className="flex flex-col justify-center relative min-h-[300px] lg:min-h-[376px] rounded-[32px]">
+      <div className="flex flex-col justify-center relative min-h-[240px] sm:min-h-[300px] lg:min-h-[376px] rounded-[32px]">
         <div
           style={{
             backgroundImage: `url('${bgImg}')`,
