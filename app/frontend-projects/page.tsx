@@ -1,5 +1,6 @@
 import { About, AboutDescription, AboutTitle } from "@/components/about"
 import Projects from "@/components/projects"
+import { Suspense } from "react"
 
 export default function FrontendProjects() {
 	return (
@@ -18,7 +19,9 @@ export default function FrontendProjects() {
 					defining the landscape of our everyday lives.
 				</AboutDescription>
 			</About>
-			<Projects />
+			<Suspense fallback={<div></div>}>
+				<Projects />
+			</Suspense>
 		</main>
 	)
 }

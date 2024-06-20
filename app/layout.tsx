@@ -5,6 +5,7 @@ import "./globals.scss"
 import { ThemeProvider } from "@/components/theme-provider"
 import DefaultWrapper from "@/components/default-wrapper"
 import { StartAnimation } from "@/components/animation/"
+import { Suspense } from "react"
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -28,7 +29,9 @@ export default function RootLayout({
 					<DefaultWrapper>{children}</DefaultWrapper>
 				</ThemeProvider>
 				{/* ANIMATIONS */}
-				<StartAnimation />
+				<Suspense>
+					<StartAnimation />
+				</Suspense>
 			</body>
 		</html>
 	)
