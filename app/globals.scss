@@ -87,6 +87,11 @@
 	}
 }
 
+body,
+html {
+	overflow-x: hidden;
+}
+
 .sidebar,
 .project-btn {
 	background: linear-gradient(145.44deg, var(--btn-background-primary) 13.74%, var(--btn-background-secondary) 104.56%) padding-box,
@@ -97,14 +102,18 @@
 }
 
 .project-btn {
-	transition: background 0.2s ease;
+	background: linear-gradient(0deg, #15161a, var(--btn-background-primary)) padding-box,
+		linear-gradient(180deg, var(--border-primary) 0%, #15161a 100%) border-box;
 
 	&[data-active='true'] {
-		background: red;
+		background: linear-gradient(0deg, #2d2e31, #36373a) padding-box,
+			linear-gradient(180deg, #4a4a4d 0%, #15161a 100%) border-box;
+		animation: lol 1s ease forwards;
 	}
 }
 
-.slider-card {
+.slider-card,
+.project-card {
 	box-shadow: 0px 8px 9px 0px #00000099;
 	background: linear-gradient(180deg, var(--card-primary) 0%, var(--card-secondary) 100%) padding-box,
 		linear-gradient(180deg, #595a5c 0%, #1a1b1e 100%) border-box;

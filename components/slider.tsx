@@ -1,15 +1,10 @@
 "use client"
 
-import React, {useEffect, useState} from "react"
-import {
-	Carousel,
-	CarouselApi,
-	CarouselContent,
-	CarouselItem,
-} from "@/components/ui/carousel"
-import ProjectSwiperCard, {IProjectSwiperCard} from "./project-swiper-card"
+import React, { useEffect, useState } from "react"
+import { Carousel, CarouselApi, CarouselContent, CarouselItem } from "@/components/ui/carousel"
+import ProjectSwiperCard, { ISliderCard } from "./slider-card"
 
-export default function Swiper({cards = [{}]}: {cards?: IProjectSwiperCard[]}) {
+export default function Swiper({ cards = [{}] }: { cards?: ISliderCard[] }) {
 	const [api, setApi] = useState<CarouselApi>()
 	const [current, setCurrent] = useState(0)
 	const [count, setCount] = useState(0)
@@ -28,14 +23,7 @@ export default function Swiper({cards = [{}]}: {cards?: IProjectSwiperCard[]}) {
 		<Carousel setApi={setApi}>
 			<CarouselContent className='max-w-[600px] lg:max-w-[806px]'>
 				{cards.map((card, index) => {
-					const {
-						bgImg,
-						icoImg,
-						mainSubTitle,
-						mainTitle,
-						secondSubTitle,
-						secondTitle,
-					} = card
+					const { bgImg, icoImg, mainSubTitle, mainTitle, secondSubTitle, secondTitle } = card
 					return (
 						<CarouselItem key={index}>
 							<ProjectSwiperCard
@@ -51,7 +39,7 @@ export default function Swiper({cards = [{}]}: {cards?: IProjectSwiperCard[]}) {
 				})}
 			</CarouselContent>
 			<div className='flex justify-center mt-4'>
-				{Array.from({length: count}).map((_, index) => (
+				{Array.from({ length: count }).map((_, index) => (
 					<span
 						key={index}
 						className={`inline-block w-3 h-3 md:hidden rounded-full mx-2 ${
