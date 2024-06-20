@@ -31,7 +31,11 @@ const config = {
         'svg-primary': 'var(--svg-primary)',
         'svg-secondary': 'var(--svg-secondary)',
         'card-primary': 'var(--card-primary)',
-        'card-secondary': 'var(--card-prisecondarymary)',
+        'card-secondary': 'var(--card-secondary)',
+        'border-primary': 'var(--border-primary)',
+        'border-secondary': 'var(--border-secondary)',
+        'btn-background-primary': 'var(--btn-background-primary)',
+        'btn-background-secondary': 'var(--btn-background-secondary)',
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",

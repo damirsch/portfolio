@@ -20,6 +20,7 @@ export default function ProjectSwiperCard({
 	secondSubTitle = "My design projects",
 	link = "/frontend-projects"
 }: IProjectSwiperCard) {
+
 	return (
 		<Link href={link}>
 			<article className="slider-card cursor-pointer relative max-w-full mx-4 lg:max-w-[760px] p-2 rounded-[40px] overflow-hidden">
@@ -44,7 +45,7 @@ export default function ProjectSwiperCard({
 				</div>
 				<div className="flex items-center gap-2 sm:gap-6 px-4 sm:px-10 py-3">
 					<div className="size-7 sm:size-8">
-						<Image src={icoImg} alt="icon" fill />
+						<Image src={icoImg} alt="icon" fill/>
 					</div>
 					<div>
 						<p className="text-base sm:text-lg">{secondTitle}</p>
