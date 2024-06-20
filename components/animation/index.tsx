@@ -35,6 +35,7 @@ export const StartAnimation = () => {
 
 			gsap.utils.toArray(".block-from-left").forEach((element) => {
 				tl.add(() => {
+					// @ts-ignore
 					gsap.to(element, {
 						duration: 1,
 						x: 0,
@@ -50,6 +51,7 @@ export const StartAnimation = () => {
 
 			gsap.utils.toArray(".block-from-bottom").forEach((element) => {
 				tl.add(() => {
+					// @ts-ignore
 					gsap.to(element, {
 						duration: 0.6,
 						y: 0,
@@ -66,6 +68,7 @@ export const StartAnimation = () => {
 
 			gsap.utils.toArray(".block-from-top").forEach((element) => {
 				tl.add(() => {
+					// @ts-ignore
 					gsap.to(element, {
 						duration: 0.6,
 						y: 0,
